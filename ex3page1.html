@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <style media="screen">
+  .carousel-inner img {
+    width: 60%;
+    height: 25%;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .tab-img {
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .card-noborder {
+    border-style: none;
+  }
+  aside {
+    color: #9b1b30;
+    font-style: italic;
+    margin-top: 130px;
+  }
+  main {
+    margin-top: 20px;
+  }
+  </style>
+  <title>Pantone Matching System</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#"></a>
+
+      <!-- Collapsible button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ex3page2.html">Unfortunate Colors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Theme 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Theme 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Theme 3</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Theme 4
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Theme 4.1</a>
+              <a class="dropdown-item" href="#">Theme 4.2</a>
+              <a class="dropdown-item" href="#">Theme 4.3</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="slideshow" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+        <li data-target="#slideshow" data-slide-to="1"></li>
+        <li data-target="#slideshow" data-slide-to="2"></li>
+        <li data-target="#slideshow" data-slide-to="3"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block" src="vermillionorange.jpg" alt="Vermillion orange" width="800" height="500">
+          <div class="carousel-caption">
+            <h5>Vermillion Orange</h5>
+            <h6>16-1362</h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block" src="cyanblue.jpg" alt="Cyan Blue" width="1100" height="500">
+          <div class="carousel-caption">
+            <h5>Cyan Blue</h5>
+            <h6>16-4529</h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block" src="chilipepper.jpg" alt="Chili Pepper" width="1100" height="500">
+          <div class="carousel-caption">
+            <h5>Chili Pepper</h5>
+            <h6>19-1557</h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block" src="emerald.jpg" alt="Emerald" width="1100" height="500">
+          <div class="carousel-caption">
+            <h5>Emerald</h5>
+            <h6>17-5641</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#slideshow" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-lg-9 col-xl-10">
+        <main>
+          <h1>Pantone Matching System</h1>
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+              <h2>What is Pantone?</h2>
+              <p>The Pantone Matching System is a standardized system for describing colors; it is used commonly across manufacturing and design fields.  As of March 2019, Pantone has named 1,867 colors with many added each year.  They maintain separate color sets for CMYK printing and RGB dyeing applications and include metallic and fluorescent colors.</p>
+              <p>The system began in 1962 when Pantone Inc, which manufactured color cards for cosmetic companies, was bought by employee Lawrence Herbert.  He’d puzzled over the problem of how to accurately color pantyhose, all of which were slight variations of beige, and wound up mixing the inks himself because he couldn’t communicate the colors to manufacturers.</p>
+                <h3>Pantone Color of the Year</h3>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#item1">2019</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#item2">2018</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#item3">2017</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div id="item1" class="container tab-pane active"><br>
+                    <h3>Living Coral</h3>
+                    <img src="livingcoral.png" class="img-fluid tab-img" alt="Living Coral">
+                    <p>According to Pantone's <a href="https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2019">website</a>, Living Coral is vibrant, mellow, warm, and buoyant.  It was selected to reflect our search for authentic connections and desire for playful expression in a digital world. </p>
+                  </div>
+
+                  <div id="item2" class="container tab-pane fade"><br>
+                    <h4>Ultra Violet</h4>
+                    <img src="ultraviolet.jpg" class="img-fluid tab-img" alt="Ultra Violet">
+                    <p>Pantone describes Ultra Violet as provocative and thoughtful, reflecting originality, ingenuity, and complex contemplation.</p>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Year</th>
+                          <th>Pantone Color</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-success">
+                          <td>2017</td>
+                          <td>Greenery</td>
+                        </tr>
+                        <tr class="table-secondary">
+                          <td>2018</td>
+                          <td>Ultra Violet</td>
+                        </tr>
+                        <tr class="table-danger">
+                          <td>2019</td>
+                          <td>Living Coral</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div id="item3" class="container tab-pane fade"><br>
+                    <h3>Greenery</h3>
+                    <img src="greenery.png" class="img-fluid tab-img" alt="Greenery">
+                    <p>Greenery was selected for 2017 as a symbol of new beginnings.  Pantone describes it as fresh, zesty, renewing, and evocative of the unity of the natural world.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <p>When he took over the company, he rigorously developed his system.  “I have matched color charts for wine.  I matched color charts for anemia blood samples and for walnuts and strawberries and goldfish,” he said, reflecting on his long career in a <a href="https://www.nytimes.com/2013/02/24/magazine/who-made-that-pantone-chip.html?login=email&auth=login-email" target="blank">New York Times Magazine article</a>.  Herbert built upon existing CMYK systems for color standardization, and his system was widely adopted by designers and manufacturers, accomplishing his goal of creating a universal color language.</p>
+                <p>Find out more about Pantone Matching System <a href="https://www.pantone.com/color-systems/pantone-color-systems-explained" target="blank">here</a>. </p>
+              </div>
+            </div>
+          </main>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
+          <aside>
+            <h3>Did you know?</h3>
+            <p>Calvin Klein kept a Pantone chip in his kitchen so his staff would know what color to make his coffee.</p>
+          </aside>
+        </div>
+      </div>
+<!-- Thumbnails -->
+<div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="card">
+          <div class="card-body text-center">
+            <img class="img-fluid" src="thumbnail1.jpg" alt="Greens">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="card">
+          <div class="card-body text-center">
+            <img class="img-fluid" src="thumbnail2.jpg" alt="Blues">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="card">
+          <div class="card-body text-center">
+            <img class="img-fluid" src="thumbnail3.png" alt="Purples">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="card">
+          <div class="card-body text-center">
+            <img class="img-fluid" src="thumbnail4.jpg" alt="Yellows">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="card">
+          <div class="card-body text-center">
+            <img class="img-fluid" src="thumbnail5.jpg" alt="Oranges">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="card">
+          <div class="card-body text-center">
+            <img class="img-fluid" src="thumbnail6.jpg" alt="Grays">
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Circle images-->
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-3">
+          <div class="card card-noborder">
+            <div class="card-body text-center">
+              <img class="img-fluid rounded-circle" data-toggle="collapse" data-target="#image1" src="teamcocoorange.jpg" alt="Team Coco Orange">
+              <div id="image1" class="collapse">
+                <h4>Team Coco Orange</h4>
+                <p>Pantone developed a color of orange especially for Conan O'Brien. It's meant to be energizing, fearless, warmhearted, and animated.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-3">
+          <div class="card card-noborder">
+            <div class="card-body text-center">
+              <img class="img-fluid rounded-circle" data-toggle="collapse" data-target="#image2" src="cremedepeche.png" alt="Creme de Peche">
+              <div id="image2" class="collapse">
+                <h4>Creme de Peche</h4>
+                <p>Creme de Peche was selected by Pantone to be part of 2019-2020 Paris fashion week.  Designers look to Pantone for predictions of color trends.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-3">
+          <div class="card card-noborder">
+            <div class="card-body text-center">
+              <img class="img-fluid rounded-circle" data-toggle="collapse" data-target="#image3" src="jayzblue.png" alt="Jay Z with Jay Z Blue Car">
+              <div id="image3" class="collapse">
+                <h4>Jay-Z Blue</h4>
+                <p>Until recently, Jay-Z was the only individual to have their own Pantone color, Jay-Z Blue.  Now one other individual, real estate tycoon Sherry Chris, has her own shade of hot pink.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-3">
+          <div class="card card-noborder">
+            <div class="card-body text-center">
+              <img class="img-fluid rounded-circle" data-toggle="collapse" data-target="#image4" src="customcolors.jpg" alt="Variety of Pantone color chips">
+              <div id="image4" class="collapse">
+                <h4>Custom colors</h4>
+                <p>If you have enough money, you can hire Pantone to develop a custom color for your brand. Pantone is responsible for Barbie pink, Tiffany's aqua, and every color used by the U.S. Army.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>

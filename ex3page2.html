@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <style media="screen">
+    .carousel-inner img {
+      width: 60%;
+      height: 25%;
+      margin-left: auto;
+      margin-right:auto;
+    }
+    .tab-img {
+      float: left;
+      margin-right: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .card-noborder {
+      border-style: none;
+    }
+    .affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+    }
+    .img-centered {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+    .btn-lg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #4a412a;
+    }
+    .keepsize {
+      object-fit: contain;
+      padding: 10px;
+    }
+    .navbar {
+      margin-bottom: 0px;
+    }
+    .affix ~ .container-fluid {
+      position: relative;
+      top: 50px;
+    }
+    #scrollsection {
+      position: relative;
+    }
+    aside {
+      color: #9b1b30;
+      font-style: italic;
+      margin-top: 130px;
+    }
+    main {
+      margin-top: 20px;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    body {
+      position: relative;
+    }
+  </style>
+  <title>Unfortunate Colors</title>
+</head>
+<body data-spy="scroll" data-target="#navbar2" data-offset="50">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#"></a>
+
+      <!-- Collapsible button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="ex3page1.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Unfortunate Colors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Theme 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Theme 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Theme 3</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Theme 4
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Theme 4.1</a>
+              <a class="dropdown-item" href="#">Theme 4.2</a>
+              <a class="dropdown-item" href="#">Theme 4.3</a>
+            </div>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col-sm-12 col-md-8 col-lg-9 col-xl-10">
+            <main>
+              <h1>Unfortunate Colors</h1>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                  <p>My goal in this page is to try out three Bootstrap features: Affix, Modals, and Tooltips.  There will be an affixed horizontal nav bar with three tabs, and in each of these tabs will be an image with tooltip, some text, and a button that opens a popup window.</p>
+                  <p>Edit: It turns out all the Affix stuff related more to Bootstrap 3, and the sticky-top class works perfectly in Bootstrap 4 to get the nav bar to stick.  So much easier.</p>
+                </div>
+              </div>
+              <!-- affixed nav bar -->
+              <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top" id="navbar2" data-spy="affix" data-offset-top="197">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="#opaquecouche">Opaque Couche</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#greige">Greige</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#aipantone">AI Pantone</a></li>
+                </ul>
+              </nav>
+
+              <div id="scrollsection" data-spy="scroll" data-target="#navbar2" data-offset="50">
+              <div id="opaquecouche">
+                <h2>Opaque Couche</h2>
+                <p>Science may have given us the world's ugliest color.  Researchers at Bfk Bluemoon in Australia found that Pantone 448C, Opaque Couche, turns people off more than any other color.  The research has been verified by other groups.</p>
+                <img class="img-fluid img-centered" data-toggle="tooltip" title="I don't want to touch anything this color." src="opaquecouche.jpg" alt="Opaque Couche">
+                <h4>Ugly Color Quiz:</h4>
+                <p>What everyday product is packaged in Opaque Couche in several countries?</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Modal1">Answer</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="Modal1" role="dialog">
+                  <div class="modal-dialog">
+
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"></h4>
+                      </div>
+                      <div class="modal-body">
+                        <p><strong>Cigarettes</strong>! The dissuasive power of Opaque Couche has been shown to decrease smoking frequency and is therefore used in deterrent cigarette packaging in parts of Europe and Australia.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div id="greige">
+                    <h2>Greige</h2>
+                    <p>Exactly what it sounds like.  As advice website for millennials The Spruce calls it, <a href="https://www.thespruce.com/greige-best-neutral-color-ever-797930" target="blank">"The Best Neutral Color Ever?"</a></p>
+                    <img class="img-fluid img-centered" data-toggle="tooltip" title="Total lack of hype" src="greige.jpg" alt="Greige">
+                      <p>I'm guessing that if you're getting excited about painting your home greige, you have joined the ranks of functional adults.</p>
+                      <h4>Celebrity Color Quiz:</h4>
+                      <p>Which designer lists greige as one of their favorite colors?</p>
+                      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Modal2">Answer</button>
+                      <div class="modal fade" id="Modal2" role="dialog">
+                        <div class="modal-dialog">
+
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title"></h4>
+                            </div>
+                            <div class="modal-body">
+                              <p><strong>Martha Stewart</strong>! Just check out <a href="https://www.marthastewart.com/275277/neutral-rooms" target="blank">this greige room</a>. Superlatively neutral.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                  </div>
+                  <div id="aipantone">
+                    <h2>AI Generated Colors</h2>
+                    <p><a href="http://aiweirdness.com/post/160776374467/new-paint-colors-invented-by-neural-network">This</a> is my favorite color resource for humor value.  This person trained a neural network on color names and RGB values and then had it create its own.</p>
+                    <div class="row">
+                      <img class="keepsize" data-toggle="tooltip" title="Woleebaph Ronder Wily! My favorite!" src="aiother.png" alt="AI generated colors">
+                      <img class="keepsize" data-toggle="tooltip" title="Conk Green! My other favorite!" src="aiother2.png" alt="AI generated colors">
+                      <img class="keepsize" data-toggle="tooltip" title="Blae is a good onomatopoeia for this color." src="caeebrae.png" alt="AI generated colors">
+                    </div>
+                    <p>I'm not sure I'm ready for greige, but I'd definitely paint my kitchen Burf Pink or Stanky Bean.</p>
+                    <h4>Neural Network Color Quiz:</h4>
+                    <p>Should I paint my kitchen Stanky Bean?</p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Modal3">Answer</button>
+                    <div class="modal fade" id="Modal3" role="dialog">
+                      <div class="modal-dialog">
+
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"></h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><strong>Yes</strong>! Also consider Grade Bat for the living room.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <br>
+                  </div>
+                </main>
+              </div>
+            </div>
+            </div>
+          </div>
+        </body>
+        </html>
